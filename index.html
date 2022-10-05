@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="weather__wrapper">
+
+        <form class="weather__search">
+            <input type="text" class="input-search" placeholder="Aktobe"/>
+            <button class="btn-search"><img src="img/logo-search.svg" alt="Search"/></button>
+        </form>
+
+        <div class="info-block">
+
+            <div class="tabs">
+
+                <div id="tab_now" class="tabs__block block-1">
+                    <p class="temperature">14°</p>
+                    <div class="icon-weather"><img src="img/icon-cloud.svg" alt="Weather" class="icon-weather-img"></div>
+
+                    <div class="now-bottom">
+                        <h2 class="now-location">Aktobe</h2>
+                        <button class="btn-favour">
+                            <img class="icon-favour" src="img/icon-shape.svg" alt="Favorites">
+                        </button>
+                    </div>
+                </div>
+
+                <div id="tab_details" class="tabs__block block-2">
+                    <h2 class="details-location">Aktobe</h2>
+                    <ul class="details-list">
+                        <li class="list-elem details-temperature">Temperature: 14°</li>
+                        <li class="list-elem details-feels-like">Feels like: 10°</li>
+                        <li class="list-elem details-weather">Weather: Clouds</li>
+                        <li class="list-elem details-sunrise">Sunrise: 03:21</li>
+                        <li class="list-elem details-sunset">Sunset: 18:54</li>
+                    </ul>
+                </div>
+
+                <div id="tab_forecast" class="tabs__block block-3">
+                    <div class="forecast-location">Aktobe</div>
+
+                    <div class="forecast__block-forecasts">
+
+                        <div class="forecast-block">
+                            <div class="block-left">
+                                <div class="block-date        date-block-0">17 May</div>
+                                <div class="block-temperature temp-block-0">Temperature: 13°</div>
+                                <div class="block-feelslike   feelslike-block-0">Feels like: 10°</div>
+                            </div>
+                            <div class="block-right">
+                                <div class="block-time    time-block-0">12:00</div>
+                                <div class="block-weather weather-block-0">Rain</div>
+                                <div class="block-icon"><img class="icon-weather-forecast icon-block-0" src="" alt="Weather"></div>
+                            </div>
+                        </div>
+
+                        <div class="forecast-block">
+                            <div class="block-left">
+                                <div class="block-date        date-block-1">17 May</div>
+                                <div class="block-temperature temp-block-1">Temperature: 13°</div>
+                                <div class="block-feelslike   feelslike-block-1">Feels like: 10°</div>
+                            </div>
+                            <div class="block-right">
+                                <div class="block-time    time-block-1">15:00</div>
+                                <div class="block-weather weather-block-1">Rain</div>
+                                <div class="block-icon"><img class="icon-weather-forecast icon-block-1" src="" alt="Weather"></div>
+                            </div>
+                        </div>
+
+                        <div class="forecast-block">
+                            <div class="block-left">
+                                <div class="block-date        date-block-2">17 May</div>
+                                <div class="block-temperature temp-block-2">Temperature: 13°</div>
+                                <div class="block-feelslike   feelslike-block-2">Feels like: 10°</div>
+                            </div>
+                            <div class="block-right">
+                                <div class="block-time    time-block-2">18:00</div>
+                                <div class="block-weather weather-block-2">Rain</div>
+                                <div class="block-icon"><img class="icon-weather-forecast icon-block-2" src="" alt="Weather"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tabs__item">
+                    <a href="#tab_now"      class="tab tab-now">Now</a>
+                    <a href="#tab_details"  class="tab tab-details">Details</a>
+                    <a href="#tab_forecast" class="tab tab-forecast">Forecast</a>
+                </div>
+
+            </div>
+
+            <div  class="weather__locations">
+                <div class="added-locations">
+                    <h2>Added Locations:</h2>
+                </div>
+                <div class="list-locations"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+    
+    
+</body>
+</html>
+
+
+<!-- <span class="loc-elem"></span>
+<button class="btn-delete"><img src="img/delete-icon.svg" alt="Delete city"></button> -->
+
+    
+
+
